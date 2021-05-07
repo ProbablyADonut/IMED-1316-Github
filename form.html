@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volunteer Form</title>
+  
+  <!--Jquery CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous"></script>
+
+  <!-- CSS only  Bootstrap CDN-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  
+  
+    <!--  Styles  -->
+  <link rel="stylesheet" href="styles/form.css">
+  
+  </head>
+<body>
+ 
+  <!-- Form -->
+  <form  enctype="multipart/form-data" class="needs-validation" novalidate data-netlify="true" name="imed1316-github">
+    
+    <h1>Volunteer Form</h1>
+    
+    <!-- Full Name - text field --> 
+    <div>
+      <label for="full-name">Full Name </label>
+       <input type="text" name="full_name" id="full-name" class="form-control" required/>
+      <!--(placeholder="Full Name") after class to have placeholder text -->
+      <div class="valid-feedback">Looks Good</div>
+      <div class="invalid-feedback">Please Input Full Name</div>
+    </div>
+  
+    <!-- Age - number field -->
+    <div>
+      <label for="age">Age</label>
+      <input type="number" name="age" id="age" class="form-control" min="16" max="120" required />
+      <div class="valid-feedback">Looks Good</div>
+      <div class="invalid-feedback">Please Input Valid Age</div>
+    </div>
+    
+    <!-- T-shirt Size - dropdown menu -->
+    <div>
+      <label for="t-shirt">T-Shirt Size</label>
+        <select name="t_shirt" id="t-shirt" class="form-control" required > 
+          <option value="">Select Size</option>
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="LG">LG</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+          <option value="CUSTOM">CUSTOM</option>
+        </select>
+      <div class="valid-feedback">Looks Good</div>
+      <div class="invalid-feedback">Please Select Shirt Size</div>
+        
+      
+      <input type="text" name="custom" id="custom" class="form-control" placeholder="Please type custom size" hidden disabled required />
+      
+      
+    </div>
+    
+    <!-- CAN I USE -->
+    <!-- Email - email field -->
+    <div>
+      <label for="email">Email</label>
+      <input type="email" name="youre_email" id="email" class="form-control" required />
+      <div class="valid-feedback">Looks Good</div>
+      <div class="invalid-feedback">Please Enter Email Address</div>
+    </div>
+    
+    
+    <!-- Phone - telephone field -->
+    <!-- i left the valid and invalid feedbacks out of the ones that werern't required just because i thought it looked a little cleaner -->
+    <div>
+      <label for="phone">Phone Number</label> (Optional)
+      <input type="tel" name="phone" id="phone" class="form-control" />
+    </div>
+    
+    <!-- url - url field -->
+    <div>
+      <label for="url">Social Media URL</label>
+      <input type="url" name="url" id="url" class="form-control" />
+    </div>
+    
+    
+    <!-- Date - date filed -->
+    <div>
+      <label for="date">When can you begin?</label>
+      <input type="date" name="begin_date" id="date" class="form-control" required />
+      <div class="valid-feedback">Looks Good</div>
+      <div class="invalid-feedback">Please Input Valid Date</div>
+    </div>
+    
+    <!--color - color picker-->
+    <div>
+      <label for="color">T-Shirt Color</label>
+      <input type="color" name="color" id="color" class="form-control" />
+    </div>
+    
+    <!-- End of CAN I USE -->
+    
+    <!-- TIme of Day - check boxes-->
+    <div class="form-check">
+      <strong> Time of Day </strong><br />
+      <input type="checkbox" name="time_of_day" id="time-of-day-morning" class="checkbox form-check-input" value="Morning" />
+      <label for="time-of-day-morning" class="form-check-label">Morning</label> <br />
+      
+      <input type="checkbox" name="time_of_day" id="time-of-day-afternoon" class="checkbox form-check-input" value="Afternoon" />
+      <label for="time-of-day-afternoon" class="form-check-label">Afternoon</label><br />
+      
+      <input type="checkbox" name="time_of_day" id="time-of-day-evening" class="checkbox form-check-input" value="Evening" />
+      <label for="time-of-day-evening" class="form-check-label">Evening</label><br />
+      
+      
+    </div>
+    
+    <!-- Veteran - Radio Buttons -->
+    <div>
+      <strong>Are you a US Veteran?</strong> <br />
+      <input type="radio" name="veteran" id="veteran-yes" class="radio form-check-input" />
+      <label for="veteran-yes">Yes</label>
+      
+      <input type="radio" name="veteran" id="veteran-no" class="radio form-check-input" />
+      <label for="veteran-no">No</label>
+      
+    </div>
+    
+    <!-- Upload Document - upload field -->
+    
+    <div>
+      <label for="file">Background Check</label><br />
+      <input type="file" name="file" id="file" class="form-control" accept="pdf" required />
+      <div class="valid-feedback">Looks Good</div>
+      <div class="invalid-feedback">Please Upload Background Check In PDF Format</div>
+    </div>
+    
+    
+    <!-- Comments - text area -->
+    <div>
+      <label for="about-you">Tell us about you (Optional)</label>
+      <textarea name="about-you" id="about-you" class="form-control" col="50%" rows="7"></textarea>
+      
+    </div>
+    
+    
+    <!-- submit button - button -->
+    <div>
+      <input type="submit" name="submit" class="submit btn-primary" id="submit" value="Volunteer Now!" />
+    </div>
+    
+    
+  </form>
+  
+  
+  
+    <!-- Scripts -->
+  <script src="scripts/form.js"></script>
+  
+  
+</body>
+</html>

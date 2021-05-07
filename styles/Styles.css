@@ -1,0 +1,128 @@
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.navbar {
+  background-color: pink;
+}
+
+.nav-link, .navbar-brand {
+  color: #fff !important;
+}
+
+.nav-link:hover, .navbar-brand:hover {
+  color: purple !important;
+}
+
+
+.dropdown-menu {
+  background-color: pink;
+}
+
+
+
+
+.fa-row{
+  background-color: pink;
+  text-align: center;
+  padding: 20px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.fas, .fab, .far {
+  font-size: 50px;
+
+}
+.fas:hover, .fab:hover, .far:hover {
+  color: purple;
+  transform:scale(1.2);
+}
+
+.fab-link {
+  font-weight:bold;
+  color:white;
+}
+
+.fab-link:hover {
+  color: purple;
+  text-decoration: none; 
+}
+
+.footer-row {
+  background-color: pink;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.footer-row a {
+  color: white;
+  
+}
+
+.footer-row a:hover {
+  color: purple;
+}
+
+
+iframe {
+  padding: 30px 0px 30px 0px;
+}
+
+
+
+/*parallax*/
+.parallax {
+  background-image: url("https://digitaladdictsblog.com/wp-content/uploads/2019/01/shutterstock_295846730-1280x720.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+.gallery-row {
+  text-align: center;
+  position: relative;
+  padding-bottom: 30px;
+  
+}
+
+.cropped {
+  width: 300px;
+  height: 300px;
+  clip-path: circle(50% at 50% 50%);
+
+}
+
+.cropped-1 {
+  object-fit: cover;
+  object-position: 30% 20%;
+  
+}
+
+.cropped-2 {
+  object-fit: cover;
+  object-position: 40% 10%;
+}
+
+.cropped-3 {
+  object-fit: cover;
+  object-position: 40% 10%;
+}
+
+@media only screen and (max-width: 600px) {
+  .cropped-col {
+    padding-top: 10px;
+  }
+}

@@ -1,0 +1,39 @@
+form {
+  width: 80%;
+  padding: 30px;
+  margin: auto;
+  
+}
+
+form div{
+  margin-top: 10px;
+}
+#color {
+  width: 80px;
+  height: 30px;
+}
+
+.checkbox, .radio {
+  width: 20px !important;
+  height: 20px !important;
+  
+}
+
+#age {
+  width: 100px;
+}
+
+#custom {
+  margin-top: 5px;
+}
+
+#submit {
+  background-color: pink !important;
+  border: 0;
+  padding: 5px;
+  
+}
+
+#date {
+  width: 200px;
+}
